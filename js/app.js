@@ -14,11 +14,11 @@ bpApp.config(function($stateProvider, $urlRouterProvider) {
         
         .state('profile', {
             url: '/profile',
-            templateUrl: 'profile.html'       
+            templateUrl: 'views/profile.html'       
         })
         
         .state('contact', {
             url: '/contact',
             templateUrl: 'contact.html'
-        })
+        });
 });
