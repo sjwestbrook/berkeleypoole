@@ -1,1 +1,24 @@
+var bpApp = angular.module('bpApp', ['ui.router']);
 
+bpApp.config(function($stateProvider, $urlRouterProvider) {
+    
+    $urlRouterProvider.otherwise('/home');
+    
+    $stateProvider
+        
+        // HOME STATES AND NESTED VIEWS ========================================
+        .state('home', {
+            url: '/home',
+            templateUrl: 'home.html'
+        })
+        
+        .state('profile', {
+            url: '/profile',
+            templateUrl: 'profile.html'       
+        });
+        
+        .state('contact', {
+            url: '/contact',
+            templateUrl: 'contact.html'
+        })
+});
