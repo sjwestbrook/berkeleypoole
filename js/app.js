@@ -1,6 +1,6 @@
-var bpApp = angular.module('bpApp', ['ui.router']);
+var myApp = angular.module('myApp', ['ui.router']);
 
-bpApp.config(function($stateProvider, $urlRouterProvider) {
+myApp.config(function($stateProvider, $urlRouterProvider) {
     
     $urlRouterProvider.otherwise('/home');
     
