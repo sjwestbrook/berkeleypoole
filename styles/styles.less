@@ -5,7 +5,17 @@
 @dkgrey: rgb(140, 139, 140);
 @black: rgb(15, 15, 15);
 
-
+.links {
+  a {
+     text-decoration: none;
+     a:hover {
+       color: @dkbeige;
+     }
+     a:visited {
+        @black/
+     }
+  }
+}
 
 
 
@@ -21,21 +31,14 @@ html, body {
 
 header {
   color: @black;
+  .links;
   nav {
     ul {
       list-style-type: none;
-      
       li {
       	padding: 5%;
-      	a {
-      	  text-decoration: none;
-      	}
-      	a:hover {
-      	  color: @dkbeige;
-      	}
-      	a:visited {
-      	  @black/
-      	}
+      	display: inline;
+        .links;	
       }
     }
   }
