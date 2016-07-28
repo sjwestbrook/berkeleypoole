@@ -9,16 +9,16 @@ bpApp.config(function($stateProvider, $urlRouterProvider) {
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl: 'home.html'
+            templateUrl: 'js/views/home.html'
         })
         
         .state('profile', {
             url: '/profile',
-            templateUrl: 'profile.html'       
+            templateUrl: 'js/views/profile.html'       
         });
         
         .state('contact', {
             url: '/contact',
-            templateUrl: 'contact.html'
+            templateUrl: 'js/views/contact.html'
         })
 });
