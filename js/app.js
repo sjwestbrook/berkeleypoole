@@ -15,7 +15,7 @@ bpApp.config(function($stateProvider, $urlRouterProvider) {
         .state('profile', {
             url: '/profile',
             templateUrl: '/views/profile.html'       
-        });
+        })
         
         .state('contact', {
             url: '/contact',
