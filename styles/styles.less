@@ -1,4 +1,4 @@
-// VARIABLES
+// VARIABLES, MIXINS, EC
 @ltbeige: rgb(232, 228, 229);
 @dkbeige: rgb(187, 159, 148);
 @mdgrey: rgb(156, 159, 160);
@@ -8,6 +8,38 @@
 
 
 
+
+// ELEMENTS
+
+html, body {
+  background-color: @ltbeige;	
+}
+
+.container {
+  width: 70%;
+}
+
+header {
+  color: @black;
+  nav {
+    ul {
+      list-style-type: none;
+      
+      li {
+      	padding: 5%;
+      	a {
+      	  text-decoration: none;
+      	}
+      	a:hover {
+      	  color: @dkbeige;
+      	}
+      	a:visited {
+      	  @black/
+      	}
+      }
+    }
+  }
+}
 
 
 
