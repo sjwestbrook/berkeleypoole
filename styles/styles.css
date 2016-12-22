@@ -1,114 +1,103 @@
 /* VARIABLES */
+
 /* COLORS ===================== */
+@ltbeige: rgb(232, 228, 229);
+@dkbeige: rgb(187, 159, 148);
+@mdgrey: rgb(156, 159, 160);
+@dkgrey: rgb(140, 139, 140);
+@black: rgb(15, 15, 15);
+
+
 /* FONTS ===================== */
+
+
 /* MIXINS  ===================== */
-.links a {
-  text-decoration: none;
+
+.links {
+  a {
+     text-decoration: none;
+     a:hover {
+       color: @dkbeige;
+     }
+     a:visited {
+        color: @black;
+     }
+     a:active {
+        color: @dkbeige;
+    }
+  }
 }
-.links a a:hover {
-  color: #bb9f94;
-}
-.links a a:visited {
-  color: #0f0f0f;
-}
-.links a a:active {
-  color: #bb9f94;
-}
+
+
 .images {
   width: 100%;
   margin: 2%;
 }
+
+
 /* ELEMENTS */
-html,
-body {
-  background-color: #e8e4e5;
+
+html, body {
+  background-color: @ltbeige;	
 }
+
+
+
 nav {
-  color: #8c8b8c;
-  background-color: #e8e4e5;
+  color: @dkgrey;
+  background-color: @ltbeige;
+  .navbar-brand {
+    font-weight: 2em; 
+    a, &:active, &:hover, &:visited {
+      color: @dkgrey; 
+    }
+  }
+  ul {
+    width: 90%;
+    list-style-type: none;
+    display: inline;
+    li {
+      padding: 5%;
+      display: inline;
+      text-transform: uppercase;
+      .links;	
+    }
+  }
 }
-nav .navbar-brand {
-  font-weight: 2em;
-}
-nav .navbar-brand a,
-nav .navbar-brand:active,
-nav .navbar-brand:hover,
-nav .navbar-brand:visited {
-  color: #8c8b8c;
-}
-nav ul {
-  width: 90%;
-  list-style-type: none;
-  display: inline;
-}
-nav ul li {
-  padding: 5%;
-  display: inline;
+
+
+h1, h2, h3, h4 {
+  color: @black;
   text-transform: uppercase;
 }
-nav ul li a {
-  text-decoration: none;
-}
-nav ul li a a:hover {
-  color: #bb9f94;
-}
-nav ul li a a:visited {
-  color: #0f0f0f;
-}
-nav ul li a a:active {
-  color: #bb9f94;
-}
-h1,
-h2,
-h3,
-h4 {
-  color: #0f0f0f;
-  text-transform: uppercase;
-}
+
 .projects {
   list-style-type: none;
+  h4 {
+   color: @black
+  }
+  li {
+    padding: 5%;
+    display: block;
+    font-size: 1.2em;
+    .links;	
+  }
 }
-.projects h4 {
-  color: #0f0f0f;
-}
-.projects li {
-  padding: 5%;
-  font-size: 1.2em;
-}
-.projects li a {
-  text-decoration: none;
-}
-.projects li a a:hover {
-  color: #bb9f94;
-}
-.projects li a a:visited {
-  color: #0f0f0f;
-}
-.projects li a a:active {
-  color: #bb9f94;
-}
+
 .services {
   list-style-type: none;
+  h4 {
+   color: @black
+  }
+  li {
+    padding: 5%;
+    display: block;
+    font-size: 1.2em;
+    .links;	
+  }
 }
-.services h4 {
-  color: #0f0f0f;
-}
-.services li {
-  padding: 5%;
-  font-size: 1.2em;
-}
-.services li a {
-  text-decoration: none;
-}
-.services li a a:hover {
-  color: #bb9f94;
-}
-.services li a a:visited {
-  color: #0f0f0f;
-}
-.services li a a:active {
-  color: #bb9f94;
-}
+
+
 /* CSS TRANSITION TO DISPLAY TEXT ON HOVER */
 /* .social {
   .instagram1 {
