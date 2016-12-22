@@ -1,1 +1,71 @@
 
+/* VARIABLES */
+/* COLORS ===================== */
+/* FONTS ===================== */
+/* MIXINS  ===================== */
+.links a {
+  text-decoration: none;
+}
+.links a a:hover {
+  color: #bb9f94;
+}
+.links a a:visited {
+  color: #0f0f0f;
+}
+.links a a:active {
+  color: #bb9f94;
+}
+/* ELEMENTS */
+html,
+body {
+  background-color: #e8e4e5;
+}
+header {
+  color: #0f0f0f;
+}
+header a {
+  text-decoration: none;
+}
+header a a:hover {
+  color: #bb9f94;
+}
+header a a:visited {
+  color: #0f0f0f;
+}
+header a a:active {
+  color: #bb9f94;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 5%;
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a a:hover {
+  color: #bb9f94;
+}
+header nav ul li a a:visited {
+  color: #0f0f0f;
+}
+header nav ul li a a:active {
+  color: #bb9f94;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #0f0f0f;
+  text-transform: uppercase;
+}
+.content-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.content-container .img {
+  width: 40%;
+  margin: 2%;
+}
