@@ -23,27 +23,31 @@ html,
 body {
   background-color: #e8e4e5;
 }
-nav {
+.nav {
   color: #8c8b8c;
   background-color: #e8e4e5;
 }
-nav ul {
-  list-style-type: none;
+.nav .logo {
+  font-weight: 2em;
 }
-nav ul li {
+.nav ul {
+  list-style-type: none;
+  display: inline;
+}
+.nav ul li {
   padding: 5%;
   display: inline;
 }
-nav ul li a {
+.nav ul li a {
   text-decoration: none;
 }
-nav ul li a a:hover {
+.nav ul li a a:hover {
   color: #bb9f94;
 }
-nav ul li a a:visited {
+.nav ul li a a:visited {
   color: #0f0f0f;
 }
-nav ul li a a:active {
+.nav ul li a a:active {
   color: #bb9f94;
 }
 h1,
