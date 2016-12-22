@@ -14,6 +14,10 @@
 .links a a:active {
   color: #bb9f94;
 }
+.images {
+  width: 100%;
+  margin: 2%;
+}
 /* ELEMENTS */
 html,
 body {
