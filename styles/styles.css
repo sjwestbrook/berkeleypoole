@@ -36,7 +36,7 @@ nav .navbar-brand:hover,
 nav .navbar-brand:visited {
   color: #8c8b8c;
 }
-nav ul .navbar-nav {
+nav ul {
   width: 90%;
   list-style-type: none;
   display: inline;
@@ -64,4 +64,26 @@ h3,
 h4 {
   color: #0f0f0f;
   text-transform: uppercase;
+}
+.projects {
+  list-style-type: none;
+}
+.projects h4 {
+  color: #0f0f0f;
+}
+.projects li {
+  padding: 5%;
+  font-size: 1.2em;
+}
+.projects li a {
+  text-decoration: none;
+}
+.projects li a a:hover {
+  color: #bb9f94;
+}
+.projects li a a:visited {
+  color: #0f0f0f;
+}
+.projects li a a:active {
+  color: #bb9f94;
 }
