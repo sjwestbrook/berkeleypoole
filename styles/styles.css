@@ -36,28 +36,26 @@ nav .navbar-brand:hover,
 nav .navbar-brand:visited {
   color: #8c8b8c;
 }
-nav .navbar-nav {
-  width: 80%;
-}
-nav .navbar-nav ul {
+nav ul .navbar-nav {
+  width: 90%;
   list-style-type: none;
   display: inline;
 }
-nav .navbar-nav ul li {
+nav ul li {
   padding: 5%;
   display: inline;
   text-transform: uppercase;
 }
-nav .navbar-nav ul li a {
+nav ul li a {
   text-decoration: none;
 }
-nav .navbar-nav ul li a a:hover {
+nav ul li a a:hover {
   color: #bb9f94;
 }
-nav .navbar-nav ul li a a:visited {
+nav ul li a a:visited {
   color: #0f0f0f;
 }
-nav .navbar-nav ul li a a:active {
+nav ul li a a:active {
   color: #bb9f94;
 }
 h1,
