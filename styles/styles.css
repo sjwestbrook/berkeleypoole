@@ -87,3 +87,32 @@ h4 {
 .projects li a a:active {
   color: #bb9f94;
 }
+.services {
+  list-style-type: none;
+}
+.services h4 {
+  color: #0f0f0f;
+}
+.services li {
+  padding: 5%;
+  font-size: 1.2em;
+}
+.services li a {
+  text-decoration: none;
+}
+.services li a a:hover {
+  color: #bb9f94;
+}
+.services li a a:visited {
+  color: #0f0f0f;
+}
+.services li a a:active {
+  color: #bb9f94;
+}
+/* CSS TRANSITION TO DISPLAY TEXT ON HOVER */
+/* .social {
+  .instagram1 {
+  }  
+  .instagram2 {    
+  }
+} */
