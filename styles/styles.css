@@ -1,1 +1,134 @@
-
+* {
+  outline: 1px dotted blue;
+}
+.links a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.links a a:hover {
+  color: #bb9f94;
+}
+.links a a:visited {
+  color: #0f0f0f;
+}
+.links a a:active {
+  color: #bb9f94;
+}
+.links2 a {
+  color: #8c8b8c;
+  text-decoration: none;
+}
+.links2 a a:hover {
+  color: #0f0f0f;
+}
+.links2 a a:visited {
+  color: #8c8b8c;
+}
+.links2 a a:active {
+  color: #0f0f0f;
+}
+.lg-p {
+  font-size: 2.3em;
+  color: #bb9f94;
+  padding-top: 5%;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #0f0f0f;
+  text-transform: uppercase;
+}
+html,
+body {
+  background-color: #e8e4e5;
+}
+.container-fluid {
+  width: 80%;
+  margin: 0 auto;
+}
+#header {
+  color: #0f0f0f;
+  padding: 3% 5%;
+  letter-spacing: .1em;
+}
+#header a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+#header a a:hover {
+  color: #bb9f94;
+}
+#header a a:visited {
+  color: #0f0f0f;
+}
+#header a a:active {
+  color: #bb9f94;
+}
+#header #logo {
+  font-size: 1.3em;
+  margin-left: -5%;
+}
+#header #logo span {
+  color: #bb9f94;
+  font-size: .8em;
+  text-transform: uppercase;
+  margin: 8%;
+}
+#header #logo ul {
+  list-style-type: none;
+}
+#header #logo ul li {
+  padding: 5%;
+  display: inline;
+}
+#header #nav ul {
+  list-style-type: none;
+}
+#header #nav ul li {
+  padding: 5%;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+#header #nav ul li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+#header #nav ul li a a:hover {
+  color: #bb9f94;
+}
+#header #nav ul li a a:visited {
+  color: #0f0f0f;
+}
+#header #nav ul li a a:active {
+  color: #bb9f94;
+}
+#projects h3 {
+  color: #0f0f0f;
+  font-size: 1.1em;
+}
+#projects ul {
+  font-size: 1.3em;
+}
+#projects ul li {
+  display: block;
+  margin-left: -8%;
+  padding: .5% 0;
+}
+#projects ul li a {
+  color: #8c8b8c;
+  text-decoration: none;
+}
+#projects ul li a a:hover {
+  color: #0f0f0f;
+}
+#projects ul li a a:visited {
+  color: #8c8b8c;
+}
+#projects ul li a a:active {
+  color: #0f0f0f;
+}
+.projects img {
+  width: 100%;
+}

@@ -1,20 +1,61 @@
 // VARIABLES, MIXINS, EC
-@ltbeige: rgb(232, 228, 229);
+@ltbeige: rgb(232, 228, 229);  // body
 @dkbeige: rgb(187, 159, 148);
 @mdgrey: rgb(156, 159, 160);
 @dkgrey: rgb(140, 139, 140);
 @black: rgb(15, 15, 15);
 
+
+* {
+  outline: 1px dotted blue;
+}
+
 .links {
   a {
+     color: @black;
      text-decoration: none;
      a:hover {
        color: @dkbeige;
      }
      a:visited {
-        @black/
+        color: @black;
      }
+    a:active {
+      color: @dkbeige;
+    }
   }
+}
+
+.links2 {
+  a {
+    color: @dkgrey; 
+    text-decoration: none;
+     a:hover {
+       color: @black;
+     }
+     a:visited {
+        color: @dkgrey;
+     }
+    a:active {
+      color: @black;
+    }
+  }
+}
+
+
+.lg-p {
+  font-size: 2.3em;
+  color: @dkbeige;
+  padding-top: 5%;
+}
+
+
+
+//
+
+h1, h2, h3, h4 {
+  color: @black;
+  text-transform: uppercase;
 }
 
 
@@ -25,91 +66,66 @@ html, body {
   background-color: @ltbeige;	
 }
 
-//.container {
-//  width: 70%;
-//  margin: 0 auto;
-//}
+.container-fluid {
+  width: 80%;
+  margin: 0 auto;
+}
 
-header {
+#header {
   color: @black;
+  padding: 3% 5%;
   .links;
-  nav {
+  letter-spacing: .1em;
+  #logo {
+    font-size: 1.3em;
+    margin-left: -5%;
+    span {
+      color: @dkbeige;
+      font-size: .8em;
+      text-transform: uppercase;
+      margin: 8%;
+    }
     ul {
       list-style-type: none;
       li {
-      	padding: 5%;
-      	display: inline;
-        .links;	
+        padding: 5%;
+        display: inline;
       }
     }
   }
+  #nav {
+    ul {
+      list-style-type: none;
+      li {
+        padding: 5%;
+        display: inline;
+        .links;	
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        
+      }
+    }
+  }  
 }
 
-h1, h2, h3, h4 {
-  color: @black;
-  text-transform: uppercase;
-}
-
-
-.content-container {
-  width: 75%;
-  margin: 0 auto;
-  
-  .img {
-    width: 40%;
-    margin: 2%;
+#projects {
+  h3 {
+    color: @black;
+    font-size: 1.1em;
   }
-
+  ul {
+    font-size: 1.3em;
+    li {
+      display: block;
+      margin-left: -8%;
+      padding: .5% 0;
+      .links2;
+    }   
+  } 
 }
 
-// RESPONSIVE GRID LAYOUT
-// http://www.responsivegridsystem.com/
-
-/*  SECTIONS - splits up page horizontally  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+.projects {
+  img {
+    width: 100%;
+  }
 }
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING - solves floating problems */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-
-
-/*  GRID OF TWO  */
-.span_2_of_2 {
-	width: 100%;
-}
-.span_1_of_2 {
-	width: 49.2%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
-}
-
-
-/// END RESPONSIVE LAYOUT
-
-
-
