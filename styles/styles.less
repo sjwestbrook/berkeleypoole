@@ -1,3 +1,4 @@
+
 // VARIABLES, MIXINS, EC
 @ltbeige: rgb(232, 228, 229);  // body
 @dkbeige: rgb(187, 159, 148);
@@ -6,20 +7,29 @@
 @black: rgb(15, 15, 15);
 
 
+
 * {
   outline: 1px dotted blue;
 }
 
+/* FONTS ===================== */
+
+
+/* MIXINS  ===================== */
+
 .links {
   a {
-     color: @black;
-     text-decoration: none;
-     a:hover {
-       color: @dkbeige;
-     }
-     a:visited {
-        color: @black;
-     }
+   color: @black;
+   text-decoration: none;
+   a:hover {
+     color: @dkbeige;
+   }
+   a:visited {
+      color: @black;
+   }
+    a:active {
+      color: @dkbeige;
+    }
     a:active {
       color: @dkbeige;
     }
@@ -42,21 +52,17 @@
   }
 }
 
-
-.lg-p {
-  font-size: 2.3em;
-  color: @dkbeige;
-  padding-top: 5%;
+.images {
+  width: 100%;
+  margin: 2%;
 }
 
-
-
-//
 
 h1, h2, h3, h4 {
   color: @black;
   text-transform: uppercase;
 }
+
 
 
 
@@ -101,8 +107,7 @@ html, body {
         display: inline;
         .links;	
         text-transform: uppercase;
-        letter-spacing: .1em;
-        
+        letter-spacing: .1em;        
       }
     }
   }  
@@ -129,3 +134,18 @@ html, body {
     width: 100%;
   }
 }
+
+
+.services {
+  list-style-type: none;
+  h4 {
+   color: @black
+  }
+  li {
+    padding: 5%;
+    display: block;
+    font-size: 1.2em;
+    .links;	
+  }
+}
+

@@ -1,6 +1,8 @@
 * {
   outline: 1px dotted blue;
 }
+/* FONTS ===================== */
+/* MIXINS  ===================== */
 .links a {
   color: #0f0f0f;
   text-decoration: none;
@@ -10,6 +12,9 @@
 }
 .links a a:visited {
   color: #0f0f0f;
+}
+.links a a:active {
+  color: #bb9f94;
 }
 .links a a:active {
   color: #bb9f94;
@@ -27,10 +32,9 @@
 .links2 a a:active {
   color: #0f0f0f;
 }
-.lg-p {
-  font-size: 2.3em;
-  color: #bb9f94;
-  padding-top: 5%;
+.images {
+  width: 100%;
+  margin: 2%;
 }
 h1,
 h2,
@@ -61,6 +65,9 @@ body {
 }
 #header a a:visited {
   color: #0f0f0f;
+}
+#header a a:active {
+  color: #bb9f94;
 }
 #header a a:active {
   color: #bb9f94;
@@ -104,6 +111,9 @@ body {
 #header #nav ul li a a:active {
   color: #bb9f94;
 }
+#header #nav ul li a a:active {
+  color: #bb9f94;
+}
 #projects h3 {
   color: #0f0f0f;
   font-size: 1.1em;
@@ -131,4 +141,31 @@ body {
 }
 .projects img {
   width: 100%;
+}
+.services {
+  list-style-type: none;
+}
+.services h4 {
+  color: #0f0f0f;
+}
+.services li {
+  padding: 5%;
+  display: block;
+  font-size: 1.2em;
+}
+.services li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.services li a a:hover {
+  color: #bb9f94;
+}
+.services li a a:visited {
+  color: #0f0f0f;
+}
+.services li a a:active {
+  color: #bb9f94;
+}
+.services li a a:active {
+  color: #bb9f94;
 }
